@@ -1,6 +1,6 @@
-import type { Route } from './+types/_index';
+import { Link } from 'react-router';
 
-import { Welcome } from '../welcome/welcome';
+import type { Route } from './+types/_index';
 
 export const meta: Route.MetaFunction = () => [
   { title: 'New React Router App' },
@@ -8,5 +8,14 @@ export const meta: Route.MetaFunction = () => [
 ];
 
 export default function Home(): React.ReactElement {
-  return <Welcome />;
+  return (
+    <div className="p-4">
+      <h1 className="text-4xl">Welcome</h1>
+      <p>
+        <Link className="text-blue-600" to="/about">
+          About
+        </Link>
+      </p>
+    </div>
+  );
 }
