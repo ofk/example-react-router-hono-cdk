@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "example-react-router-github-pages",
+  "name": "example-react-router-hono",
   "type": "module",
   "scripts": {
     "build": "react-router build",
