@@ -11,6 +11,6 @@ export default config({
   ],
   ignores: ['.react-router/', 'build/'],
   imports: {
-    defaultExportFiles: ['client/{root,routes}.*', 'client/routes/**'],
+    defaultExportFiles: ['client/{root,routes}.*', 'client/routes/**', 'server/index.ts'],
   },
 });
