@@ -5,8 +5,8 @@
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
-    "lint": "npm run typecheck && prettier -c . && prettier-package-json -l",
-    "lint-fix": "npm run typecheck && prettier -w . && prettier-package-json --write",
+    "lint": "npm run typecheck && eslint . && prettier -c . && prettier-package-json -l",
+    "lint-fix": "npm run typecheck && eslint --fix . && prettier -w . && prettier-package-json --write",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
