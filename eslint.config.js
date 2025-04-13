@@ -5,6 +5,10 @@ export default config({
     {
       files: ['client/{root,routes}.*', 'client/routes/**'],
       rules: {
+        '@typescript-eslint/explicit-function-return-type': [
+          'error',
+          { allowedNames: ['clientLoader'] },
+        ],
         'react-refresh/only-export-components': 'off',
       },
     },

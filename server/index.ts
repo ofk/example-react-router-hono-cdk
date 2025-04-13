@@ -7,10 +7,12 @@ app.use(async (c, next) => {
   c.header('X-Powered-By', 'React Router and Hono');
 });
 
-app.get('/api', (c) =>
+const _route = app.get('/api', (c) =>
   c.json({
     message: 'Hello',
   }),
 );
+
+export type AppType = typeof _route;
 
 export default app;
