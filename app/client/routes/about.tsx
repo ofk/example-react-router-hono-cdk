@@ -8,7 +8,7 @@ export const meta: Route.MetaFunction = () => [{ title: 'About | New React Route
 
 export async function clientLoader(_: Route.ClientLoaderArgs) {
   const client = hc<AppType>('/');
-  const resp = await client.api.$get();
+  const resp = await client.api.hello.$get();
   if (!resp.ok) {
     throw new Error(await resp.text());
   }

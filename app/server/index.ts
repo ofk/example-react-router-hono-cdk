@@ -7,7 +7,7 @@ app.use(async (c, next) => {
   c.header('X-Powered-By', 'React Router and Hono');
 });
 
-const _route = app.get('/api', (c) =>
+const _route = app.get('/api/hello', (c) =>
   c.json({
     message: 'Hello',
   }),

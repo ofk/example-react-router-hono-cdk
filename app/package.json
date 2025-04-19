@@ -3,7 +3,7 @@
   "name": "example-react-router-hono",
   "type": "module",
   "scripts": {
-    "build": "react-router build",
+    "build": "react-router build && esbuild --bundle --outfile=./build/server/index.js --platform=node --target=node20 ./server-lambda.ts",
     "dev": "react-router dev",
     "lint": "npm run typecheck && eslint . && prettier -c . && prettier-package-json -l",
     "lint-fix": "npm run typecheck && eslint --fix . && prettier -w . && prettier-package-json --write",
